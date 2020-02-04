@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form action="">
+        <table>
+            <tr>
+                <td>
+                    <label>
+                        First Name:<input type="text" name="firstName"  placeholder="First Name" required>
+                    </label>
+                    <label>
+                        Last Name: <input type="text" name="lastName"  placeholder="Last Name" required>
+                    </label>
+                </td>
+            </tr>   
+            <tr>
+                <td>
+                    <label>
+                        Male <input type="radio" name="Gender" value="Male" >
+                    </label>
+                    <label>
+                        Female <input type="radio" name="Gender" value="Female" >
+                    </label>
+                    <label>
+                        Other <input type="radio" name="Gender" value="Other" >
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        Email:<input type="email" name="email" required placeholder="example@email.com">
+                    </label>
+                    <label>
+                        Password: <input type="password" name="password" required placeholder="Password" minlength="5" maxlength="10">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        Birthday:
+                        <select name="Month" >
+                            <option>Month</option>
+                            <option value="Jan.">Jan.</option>
+                            <option value="Feb.">Feb.</option>
+                            <option value="March">March</option>
+                        </select>
+                        <select name="Day" >
+                            <option>Day</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>  
+                            <option value="03">03</option>
+                        </select>
+                        <select name="Year">
+                            <option>Year</option>
+                            <option value="1995">1995</option>
+                            <option value="1996">1996</option>
+                            <option value="1997">1997</option>
+                        </select>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    I agree to the terms and conditions
+                    <input type="checkbox" name="confirm" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
